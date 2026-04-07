@@ -1,96 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <script src="app.js" defer></script>
     <title>Smile House Port</title>
     <style>
-        body { font-family: 'Poppins', sans-serif; }
-        ::selection { color: white; background-color: rgb(13, 21, 44); }
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      ::selection {
+        color: white;
+        background-color: rgb(13, 21, 44);
+      }
     </style>
-</head>
-<body class="bg-[#0d152c] text-white capitalize">
+  </head>
+  <body class="bg-[#0d152c] text-white capitalize">
+    <div class="max-w-[1120px] py-6 px-4 md:px-8 mx-auto">
+      <header
+        class="bg-[#374361]/30 p-6 border border-[#3d465f]/30 rounded-[30px] flex flex-col justify-between gap-7 items-center mb-11 lg:flex-row"
+      >
+        <div class="text-center lg:text-start">
+          <h1 class="text-[#1d7be7] font-bold italic text-[1.6rem] sm:2.5rem">
+            SMILE HOUSE PORT
+          </h1>
+          <p class="text-gray-500">
+            Terminal Operator: <span class="text-[#6bbfe3]">Eng. Daadir</span>
+          </p>
+        </div>
+        <div
+          class="p-3.5 bg-[#0d152c] flex flex-col gap-2.5 items-center uppercase border border-[#3d465f]/30 rounded-[20px]"
+        >
+          <p class="tracking-[1px] text-sm">Canshuurta Nadiifta ah</p>
+          <span class="header-tax-span"
+            ><span id="tax" class="text-[1.6rem] text-[#45ac69] font-bold"
+              >0.00</span
+            ></span
+          >
+        </div>
+      </header>
 
-    <div class="max-w-[1120px] py-6  px-4 md:px-8 mx-auto">
+      <main
+        class="flex lg:gap-8 flex-col items-center lg:items-start lg:flex-row"
+      >
+        <form
+          action=""
+          class="sm:p-[1.8rem] p-6 sm:w-[24rem] w-80 bg-[#374361]/30 rounded-[2rem]"
+        >
+          <h3 class="font-bold text-[#0a5da0] mb-4 flex items-center">
+            <span
+              class="w-5 h-5 bg-[#0a5da0] text-white text-[10px] rounded-full flex items-center justify-center mr-3"
+            >
+              <i class="fa-solid fa-plus text-[10px]"></i>
+            </span>
+            DIIWAANGELI MARKAB
+          </h3>
 
-        <header class="bg-[#374361]/30 p-6 border border-[#3d465f]/30 rounded-[30px] flex flex-col justify-between gap-7 items-center mb-11 lg:flex-row">
-            <div class="text-center lg:text-start">
-                <h1 class="text-[#1d7be7] font-bold italic text-[1.6rem] sm:2.5rem">SMILE HOUSE PORT</h1>
-                <p class="text-gray-500">Terminal Operator: <span class="text-[#6bbfe3]">Eng. Daadir</span></p>
+          <div class="flex flex-col gap-2 mb-4">
+            <label for="maga-markabka-input" class="text-gray-500"
+              >Magaca Markabka</label
+            >
+            <input
+              type="text"
+              placeholder="tusaale:blue wave"
+              required
+              id="maga-markabka-input"
+              class="p-4 rounded-[13px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]"
+            />
+          </div>
+
+          <div class="flex gap-5 mb-4 justify-between">
+            <div class="flex flex-col gap-1.5">
+              <label for="misanka" class="text-gray-500">Miisaanka (KG)</label>
+              <input
+                type="number"
+                placeholder="12000"
+                required
+                id="misanka"
+                class="p-[10px_5px] w-[8rem] rounded-[10px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]"
+              />
             </div>
-            <div class="p-3.5 bg-[#0d152c] flex flex-col gap-2.5 items-center uppercase border border-[#3d465f]/30 rounded-[20px]">
-                <p class="tracking-[1px] text-sm">Canshuurta Nadiifta ah</p>
-                <span class="header-tax-span"><span id="tax" class="text-[1.6rem] text-[#45ac69] font-bold">0.00</span></span>
+            <div class="flex flex-col gap-1.5">
+              <label for="shidalka" class="text-gray-500">Shidaalka (%)</label>
+              <input
+                type="number"
+                id="shidalka"
+                placeholder="45"
+                required
+                class="p-[10px_5px] w-[8rem] rounded-[10px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]"
+              />
             </div>
-        </header>
+          </div>
 
-        <main class="flex lg:gap-8 flex-col items-center lg:items-start lg:flex-row">
+          <div class="flex flex-col gap-2 mb-4">
+            <label for="nuuca-alabta" class="text-gray-500"
+              >Nooca Alaabta</label
+            >
+            <select
+              id="nuuca-alabta"
+              class="p-4 rounded-[13px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]"
+            >
+              <option value="cunto">cunto</option>
+              <option value="electronics">electronics</option>
+              <option value="dharka">dharka</option>
+            </select>
+          </div>
 
-            <form action="" class=" sm:p-[1.8rem] p-6 sm:w-[24rem] w-80 bg-[#374361]/30 rounded-[2rem]">
-                <h3 class="font-bold text-[#0a5da0] mb-4 flex items-center">
-                    <span class="w-[28px] h-[28px] bg-[#0a5da0] text-white text-[10px] rounded-full flex items-center justify-center mr-3">
-                        <i class="fa-solid fa-plus text-[10px]"></i>
-                    </span>
-                    DIIWAANGELI MARKAB
-                </h3>
+          <button
+            type="submit"
+            id="submit"
+            class="capitalize py-[10px] w-full rounded-lg border-none bg-[#0d5dc6] text-white font-bold text-[0.7rem] mdcursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1073f5] hover:-translate-x-[3px]"
+          >
+            soo daji markabka
+          </button>
+        </form>
 
-                <div class="flex flex-col gap-2 mb-4">
-                    <label for="maga-markabka-input"  class="text-gray-500">Magaca Markabka</label>
-                    <input type="text" placeholder="tusaale:blue wave" required id="maga-markabka-input" 
-                        class="p-4 rounded-[13px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]">
-                </div>
+       <section class="w-full">
+  <h2 class="flex gap-[7px] text-xl font-bold mb-4 italic">
+    Maraakiibta Terminal-ka 
+    <span class="text-[#1d7be7] font-bold text-sm sm:text-xl">(0)</span>
+  </h2>
 
-                <div class="flex gap-5 mb-4 justify-between">
-                    <div class="flex flex-col gap-1.5">
-                        <label for="misanka" class="text-gray-500">Miisaanka (KG)</label>
-                        <input type="number" placeholder="12000" required id="misanka" 
-                            class="p-[10px_5px] w-[8rem] rounded-[10px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]">
-                    </div>
-                    <div class="flex flex-col gap-1.5">
-                        <label for="shidalka" class="text-gray-500">Shidaalka (%)</label>
-                        <input type="number" id="shidalka" placeholder="45" required
-                            class="p-[10px_5px] w-[8rem] rounded-[10px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]">
-                    </div>
-                </div>
+  <div id="terminal-container" class="bg-[#374361]/30 min-h-[16rem] flex flex-col items-center justify-center mt-8 border-2 border-dashed border-[#3d465f]/50 rounded-[2.5rem]">
+    
+    <li id="booshaye" class="flex flex-col items-center gap-4 text-[#c8c8c8] list-none">
+      <i class="fa-solid fa-ship text-[3rem]"></i>
+      Markab cusub ku dar.
+    </li>
 
-                <div class="flex flex-col gap-2 mb-4">
-                    <label for="nuuca-alabta" class="text-gray-500">Nooca Alaabta</label>
-                    <select id="nuuca-alabta" 
-                        class="p-4 rounded-[13px] outline-none border-2 border-[#7c818f]/30 bg-[#0d152c] text-[#c8c8c8] capitalize transition-all duration-300 focus:border-[#0a5da0] focus:shadow-[0_0_10px_rgba(10,93,160,0.2)]">
-                        <option value="">cunto</option>
-                        <option value="">electronics</option>
-                        <option value="">dharka</option>
-                    </select>
-                </div>
-
-                <button type="submit" id="submit"
-                    class="capitalize py-[10px] w-full rounded-lg border-none bg-[#0d5dc6] text-white font-bold text-[0.7rem] mdcursor-pointer transition-all duration-300 ease-in-out hover:bg-[#1073f5] hover:-translate-x-[3px]">
-                    soo daji markabka
-                </button>
-            </form>
-
-            <section class="w-full  ">
-                <h2 class="flex gap-[7px] text-xl font-bold mb-4">Maraakiibta Terminal-ka <span class="text-[#1d7be7] font-bold   text-sm sm:text-xl">(0)</span></h2>
-                <ul class="bg-[#374361]/30 min-h-[16rem] flex flex-col items-center justify-center mt-8 border-2 border-dashed border-[#3d465f]/50 rounded-[2.5rem] list-none">
-                    <li id="booshaye" class="flex flex-col items-center gap-4 text-[#c8c8c8]">
-                        <i class="fa-solid fa-ship text-[3rem]"></i>
-                         Markab cusub ku dar.
-                    </li>
-                    <li>
-
-
-                    </li>
-                </ul>
-            </section>
-
-        </main>
+    <table id="table" class="hidden w-full border-separate border-spacing-y-3 px-4">
+      <thead>
+        <tr class="text-[#6bbfe3] uppercase text-[10px] tracking-wider opacity-60">
+          <th class="p-4 text-left">Markabka</th>
+          <th class="p-4 text-center">Miisaanka</th>
+          <th class="p-4 text-center">Shidaalka</th>
+          <th class="p-4 text-right">Nooca</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
+</section>
+      </main>
     </div>
-
-</body>
+  </body>
 </html>
